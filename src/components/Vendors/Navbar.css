@@ -1,0 +1,211 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 28px;
+    margin-bottom:3px;
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.08);
+}
+
+/* =======================
+   Left Section
+======================= */
+
+.navbar-left h2{
+    font-size:28px;
+    font-weight:700;
+    color:#0F172A;
+}
+
+.navbar-left p{
+    margin-top:5px;
+    color:#64748B;
+    font-size:14px;
+}
+
+/* =======================
+   Right Section
+======================= */
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/* =======================
+   Search Box
+======================= */
+
+.search-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    width:300px;
+
+    background:#fff;
+
+    padding:14px 18px;
+
+    border-radius:16px;
+
+    border:1px solid #E2E8F0;
+
+    transition:.3s;
+}
+
+.search-box:hover{
+    box-shadow:0 10px 25px rgba(37,99,235,.10);
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:14px;
+}
+
+/* =======================
+   Date Box
+======================= */
+
+.date-box{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    padding:12px 18px;
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    color:#475569;
+
+    font-size:14px;
+}
+
+/* =======================
+   Notification
+======================= */
+
+.bell{
+
+    width:48px;
+    height:48px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(15,23,42,.08);
+
+    transition:.3s;
+}
+
+.bell:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+/* =======================
+   Profile
+======================= */
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    background:white;
+
+    padding:8px 14px;
+
+    border-radius:18px;
+
+    border:1px solid #E2E8F0;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.profile:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+}
+
+/* =======================
+   Avatar
+======================= */
+
+.avatar{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+    font-weight:700;
+}
+
+.profile-info h4{
+
+    font-size:15px;
+
+    color:#0F172A;
+}
+
+.profile-info p{
+
+    font-size:13px;
+
+    color:#64748B;
+
+    margin-top:3px;
+}

@@ -1,0 +1,201 @@
+.quick-actions{
+
+    margin-top:35px;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.section-header h2{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    margin-bottom:6px;
+
+}
+
+.section-header p{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   Grid
+=========================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.action-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px 22px;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.18);
+
+    border-color:#2563EB;
+
+}
+
+/* ===========================
+   Icon
+=========================== */
+
+.action-icon{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:18px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+
+}
+
+.action-card:hover .action-icon{
+
+    background:#2563EB;
+
+    color:white;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   Text
+=========================== */
+
+.action-card h4{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+.action-card span{
+
+    font-size:14px;
+
+    color:#64748B;
+
+    line-height:1.5;
+
+    transition:.3s;
+
+}
+
+.action-card:hover h4{
+
+    color:#2563EB;
+
+}
+
+.action-card:hover span{
+
+    color:#475569;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .action-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .action-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

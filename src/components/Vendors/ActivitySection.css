@@ -1,0 +1,64 @@
+.activity-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:24px;
+    margin-top:25px;
+}
+
+.activity-card,
+.notice-card{
+    background:#fff;
+    border-radius:22px;
+    padding:25px;
+    border:1px solid #EEF2F7;
+    box-shadow:0 8px 25px rgba(15,23,42,.06);
+}
+
+.activity-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:18px 0;
+    border-bottom:1px solid #EEF2F7;
+}
+
+.activity-item:last-child{
+    border:none;
+}
+
+.activity-icon{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+    background:#EFF6FF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#2563EB;
+}
+
+.activity-text{
+    flex:1;
+}
+
+.activity-text p{
+    color:#64748B;
+    font-size:14px;
+}
+
+.activity-item span{
+    color:#94A3B8;
+    font-size:13px;
+}
+
+.notice-item{
+    display:flex;
+    gap:14px;
+    padding:16px 0;
+    color:#475569;
+    border-bottom:1px solid #EEF2F7;
+}
+
+.notice-item:last-child{
+    border:none;
+}
