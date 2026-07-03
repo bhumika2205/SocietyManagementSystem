@@ -1,115 +1,67 @@
 .invoices-page { padding: 8px 0; }
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 24px;
-}
-.page-header h1 { font-size: 24px; font-weight: 700; color: #111827; margin-bottom: 4px; }
-.page-header p { font-size: 14px; color: #6b7280; }
+.page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; }
+.page-header h1 { font-size: 22px; font-weight: 700; color: #111827; margin-bottom: 4px; }
+.page-header p  { font-size: 14px; color: #6b7280; }
 
 .create-invoice-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: #2563eb;
-  color: #fff;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
+    display: flex; align-items: center; gap: 7px;
+    background: #2563eb; color: #fff; border: none;
+    padding: 10px 16px; border-radius: 10px;
+    font-size: 13px; font-weight: 500; cursor: pointer;
+    transition: background 0.2s; white-space: nowrap;
 }
 .create-invoice-btn:hover { background: #1d4ed8; }
 
 .inv-summary {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-  margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
 }
-
 .inv-summary-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    background: #fff; border-radius: 12px; padding: 18px;
+    display: flex; align-items: center; gap: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
-
-.inv-summary-card h3 { font-size: 22px; font-weight: 700; color: #111827; margin-bottom: 2px; }
-.inv-summary-card p { font-size: 13px; color: #6b7280; }
-
-.inv-sum-icon { font-size: 30px; }
-.inv-sum-icon.blue { color: #2563eb; }
-.inv-sum-icon.green { color: #10b981; }
+.inv-summary-card h3 { font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 2px; }
+.inv-summary-card p  { font-size: 13px; color: #6b7280; }
+.inv-sum-icon { font-size: 28px; flex-shrink: 0; }
+.inv-sum-icon.blue   { color: #2563eb; }
+.inv-sum-icon.green  { color: #10b981; }
 .inv-sum-icon.yellow { color: #f59e0b; }
-.inv-sum-icon.red { color: #ef4444; }
+.inv-sum-icon.red    { color: #ef4444; }
 
 .invoices-table-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    background: #fff; border-radius: 12px; padding: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow-x: auto;
 }
-
-.invoices-table-card h2 { font-size: 18px; font-weight: 600; color: #111827; margin-bottom: 20px; }
-
-.invoices-table-card table { width: 100%; border-collapse: collapse; font-size: 14px; }
-
+.invoices-table-card h2 { font-size: 18px; font-weight: 600; color: #111827; margin-bottom: 16px; }
+.invoices-table-card table { width: 100%; border-collapse: collapse; min-width: 750px; font-size: 14px; }
 .invoices-table-card th {
-  text-align: left;
-  padding: 12px 14px;
-  background: #f9fafb;
-  color: #6b7280;
-  font-weight: 600;
-  font-size: 13px;
-  border-bottom: 1px solid #e5e7eb;
+    text-align: left; padding: 11px 12px;
+    background: #f9fafb; color: #6b7280;
+    font-weight: 600; font-size: 13px;
+    border-bottom: 1px solid #e5e7eb; white-space: nowrap;
 }
-
-.invoices-table-card td {
-  padding: 14px;
-  border-bottom: 1px solid #f3f4f6;
-  color: #374151;
-}
-
+.invoices-table-card td { padding: 12px; border-bottom: 1px solid #f3f4f6; color: #374151; }
 .invoices-table-card tr:last-child td { border-bottom: none; }
 
-.inv-id { font-weight: 600; color: #2563eb; }
+.inv-id     { font-weight: 600; color: #2563eb; }
 .inv-amount { font-weight: 600; color: #10b981; }
 .overdue-date { color: #ef4444; font-weight: 500; }
 
-.inv-status {
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-}
-.inv-status.paid { background: #d1fae5; color: #065f46; }
+.inv-status { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 500; white-space: nowrap; }
+.inv-status.paid    { background: #d1fae5; color: #065f46; }
 .inv-status.pending { background: #fef3c7; color: #92400e; }
 .inv-status.overdue { background: #fee2e2; color: #991b1b; }
 
-.inv-actions { display: flex; gap: 8px; }
-
-.icon-btn {
-  border: none;
-  padding: 7px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: background 0.2s;
-}
-.icon-btn.view { background: #dbeafe; color: #2563eb; }
+.inv-actions { display: flex; gap: 6px; }
+.icon-btn { border: none; padding: 6px; border-radius: 7px; cursor: pointer; font-size: 14px; transition: background 0.2s; }
+.icon-btn.view     { background: #dbeafe; color: #2563eb; }
 .icon-btn.view:hover { background: #bfdbfe; }
 .icon-btn.download { background: #d1fae5; color: #10b981; }
 .icon-btn.download:hover { background: #a7f3d0; }
 
-@media (max-width: 768px) {
-  .inv-summary { grid-template-columns: repeat(2, 1fr); }
-  .page-header { flex-direction: column; gap: 12px; }
-}
+@media (max-width: 1024px) { .inv-summary { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px)  { .inv-summary { grid-template-columns: 1fr 1fr; gap: 10px; } }

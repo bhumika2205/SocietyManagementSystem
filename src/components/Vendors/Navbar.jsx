@@ -1,56 +1,41 @@
-import { FiBell, FiSearch, FiCalendar } from "react-icons/fi";
+import { FiBell, FiSearch, FiMenu } from "react-icons/fi";
 import "./Navbar.css";
 
-function Navbar() {
-  const today = new Date().toLocaleDateString("en-IN", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-
+function Navbar({ onMenuClick }) {
   return (
     <header className="navbar">
 
       <div className="navbar-left">
-        <h2>Vendor Dashboard</h2>
-        <p>Welcome back! Here's what's happening today.</p>
+        {/* Hamburger — only on mobile */}
+        <button className="hamburger" onClick={onMenuClick} aria-label="Open menu">
+          <FiMenu />
+        </button>
+        <div>
+          <h2>Vendor Dashboard</h2>
+          <p>Welcome back! Here's what's happening today.</p>
+        </div>
       </div>
 
       <div className="navbar-right">
 
         <div className="search-box">
           <FiSearch />
-          <input
-            type="text"
-            placeholder="Search jobs, vendors..."
-          />
+          <input type="text" placeholder="Search jobs..." />
         </div>
 
-        <div className="date-box">
-          <FiCalendar />
-          <span>{today}</span>
-        </div>
-
-        <button className="bell">
+        <button className="bell" aria-label="Notifications">
           <FiBell />
         </button>
 
         <div className="profile">
-
-          <div className="avatar">
-            V
-          </div>
-
+          <div className="avatar">V</div>
           <div className="profile-info">
             <h4>Vendor Name</h4>
             <p>Electrical Services</p>
           </div>
-
         </div>
 
       </div>
-
     </header>
   );
 }
